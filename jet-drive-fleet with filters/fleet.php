@@ -339,23 +339,31 @@ add_action('wp_enqueue_scripts', 'fleet_enqueue_scripts');
 function fleet_add_styles() {
     ?>
     <style>
-    .fleet-buttons {
+.fleet-buttons {
     text-align: center;
     margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap; /* Allow the buttons to wrap */
+    justify-content: center; /* Center the buttons horizontally */
 }
 
 .fleet-button {
-    display: inline-block;
+    display: flex;
+    flex: 0 0 auto; /* Fixed width of 200px */
     margin-right: 0.5em;
+    margin-bottom: 0.5em;
     padding: 0.5em 1em;
     border: none;
     border-radius: 4px;
     background-color: #f1f1f1;
     cursor: pointer;
     font-size: 14px;
-    color: inherit; /* Inherit the link color */
-    text-decoration: none; /* Remove default underline */
+    color: inherit;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .fleet-button:active,
 .fleet-button.active,
