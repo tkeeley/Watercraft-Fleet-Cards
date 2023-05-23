@@ -2,11 +2,12 @@
 /**
  * Plugin Name: Jet Drive Fleet
  * Description: A custom Fleet post type for the Jet Drive Fleet Page.
- * Version: 2.0
+ * Version: 3.0
  * Author: Cup O Code
  * Author URL: www.cupocode.com
- * Notes: Updated to show fleet in alphabetical order, remove limit of number of items shown per page, won't display item labels if no data is entered when creating the card
+ * Notes: Added filtering buttons for filtering fleet by location
  */
+
 
 // Create Custom Post Type
 function fleet_custom_post_type() {
