@@ -376,54 +376,57 @@ function fleet_add_styles() {
 
 
 .fleet-container {
-    /*max-width: fit-content !important;*/
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 0 1em;
-    box-sizing: border-box;
-    margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
 .fleet-item {
-    border: 1px solid #ddd;
-    padding: 1em;
-    margin: 0.5em;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
-    background-color: white;
-    box-sizing: border-box;
-    line-height: inherit;
-    flex: 0 1 calc(30% - 1em);
-    text-align: left;
+  flex: 0 1 calc(25% - 1em);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0.5em;
+  padding: 1em;
+  text-align: left;
 }
 
 .fleet-item:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
 }
 
 .fleet-item > * {
-    margin: 0;
+  margin: 0;
 }
 
 .fleet-item img {
-    width: 100%;
-    max-width: fit-content;
-    height: auto;
-    display: block;
-    margin-bottom: 0.5em;
-    object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0.5em;
+  object-fit: cover;
 }
 
 .fleet-item ul {
-    padding-left: 1em;
-    margin-bottom: 0;
-    margin-top: 0;
-    list-style-type: none;
+  padding-left: 1em;
+  margin: 0;
+  list-style-type: none;
 }
 
+/* Media Queries */
+
+@media (max-width: 767px) {
+  .fleet-item {
+    flex: 0 1 calc(100% - 1em);
+  }
+}
 
     </style>
     <?php
